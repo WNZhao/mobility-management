@@ -486,6 +486,45 @@ module.exports = function (webpackEnv) {
               // See https://github.com/webpack/webpack/issues/6571
               sideEffects: true,
             },
+            {
+                test: /\.less$/,
+                use: [
+                  require.resolve('style-loader'),
+                  {
+                    loader: require.resolve('css-loader'),
+                    options: {
+                      importLoaders: 2,
+                      sourceMap: isEnvProduction ? shouldUseSourceMap : isEnvDevelopment,
+                    },
+                  },
+                  {
+                    loader: require.resolve('postcss-loader'),
+                    options: {
+                      postcssOptions: {
+                        plugins: [
+                          require('postcss-flexbugs-fixes'),
+                          require('postcss-preset-env')({
+                            autoprefixer: {
+                              flexbox: 'no-2009',
+                            },
+                            stage: 3,
+                          }),
+                        ],
+                      },
+                      sourceMap: isEnvProduction ? shouldUseSourceMap : isEnvDevelopment,
+                    },
+                  },
+                  {
+                    loader: require.resolve('less-loader'), // less-loader for compiling Less to CSS
+                    options: {
+                      lessOptions: {
+                        javascriptEnabled: true, // 允许在 Less 中使用 JavaScript 表达式
+                      },
+                    },
+                  },
+                ],
+                sideEffects: true,
+            },
             // Adds support for CSS Modules (https://github.com/css-modules/css-modules)
             // using the extension .module.css
             {

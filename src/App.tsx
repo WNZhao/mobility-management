@@ -1,28 +1,41 @@
+// src/App.tsx
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Button } from 'antd';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from 'react-router-dom';
+import Login from './pages/Login';
+import Main from './pages/Main';
+import Dashboard from './views/Dashboard';
+import Settings from './views/Settings';
 
-function App() {
+import './assets/iconfont/iconfont.css';
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Button type="primary">Button</Button>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        {/* Login 页面 */}
+        <Route path="/login" component={Login} />
+
+        {/* Main 页面布局，嵌套路由 */}
+        <Route
+          path="/"
+          render={() => (
+            <Main>
+              <Switch>
+                <Route exact path="/dashboard" component={Dashboard} />
+                <Route exact path="/settings" component={Settings} />
+                <Redirect from="/" to="/dashboard" />
+              </Switch>
+            </Main>
+          )}
+        />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;

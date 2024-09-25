@@ -1,0 +1,79 @@
+{
+  "id": "4694611",
+  "name": "mobility-mangement",
+  "font_family": "mobility",
+  "css_prefix_text": "mobility-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1921128",
+      "name": "员工管理",
+      "font_class": "yuangongguanli",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "2053185",
+      "name": "订单管理",
+      "font_class": "dingdanguanli",
+      "unicode": "e6e5",
+      "unicode_decimal": 59109
+    },
+    {
+      "icon_id": "4354248",
+      "name": "图表-折线图",
+      "font_class": "tubiao-zhexiantu",
+      "unicode": "eb96",
+      "unicode_decimal": 60310
+    },
+    {
+      "icon_id": "4779612",
+      "name": "表单组件-表格",
+      "font_class": "biaodanzujian-biaoge",
+      "unicode": "ec15",
+      "unicode_decimal": 60437
+    },
+    {
+      "icon_id": "5994076",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "7463933",
+      "name": "地图",
+      "font_class": "ditu",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "11836393",
+      "name": "城市管理",
+      "font_class": "chengshiguanli",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "12084141",
+      "name": "开发组件",
+      "font_class": "kaifazujian",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "12331649",
+      "name": "表单",
+      "font_class": "biaodan",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "35994785",
+      "name": "权限设置",
+      "font_class": "quanxianshezhi",
+      "unicode": "e765",
+      "unicode_decimal": 59237
+    }
+  ]
+}

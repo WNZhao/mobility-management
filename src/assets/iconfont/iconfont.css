@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'mobility'; /* Project id 4694611 */
+  src: url('./iconfont.woff2?t=1727238153461') format('woff2'),
+    url('./iconfont.woff?t=1727238153461') format('woff'),
+    url('./iconfont.ttf?t=1727238153461') format('truetype'),
+    url('./iconfont.svg?t=1727238153461#mobility') format('svg');
+}
+
+.mobility {
+  font-family: 'mobility' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mobility-yuangongguanli:before {
+  content: '\e60a';
+}
+
+.mobility-dingdanguanli:before {
+  content: '\e6e5';
+}
+
+.mobility-tubiao-zhexiantu:before {
+  content: '\eb96';
+}
+
+.mobility-biaodanzujian-biaoge:before {
+  content: '\ec15';
+}
+
+.mobility-home:before {
+  content: '\e637';
+}
+
+.mobility-ditu:before {
+  content: '\e627';
+}
+
+.mobility-chengshiguanli:before {
+  content: '\e65d';
+}
+
+.mobility-kaifazujian:before {
+  content: '\e640';
+}
+
+.mobility-biaodan:before {
+  content: '\e663';
+}
+
+.mobility-quanxianshezhi:before {
+  content: '\e765';
+}
